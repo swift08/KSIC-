@@ -11,6 +11,14 @@ const occasions = [
     face: true,
   },
   {
+    title: "Bridegroom",
+    copy: "Royal silks\nfor the wedding day.",
+    image: "/cat-bridegroom.jpg",
+    alt: "Royal Mysore silk wedding attire for the groom",
+    href: "/sarees?category=groom",
+    face: true,
+  },
+  {
     title: "Ceremonial",
     copy: "Temple borders\nfor ceremony.",
     image: "/cat-sarees.jpg?v=2",
@@ -33,7 +41,7 @@ export default function Categories() {
       {occasions.map((cat) => (
         <Link key={cat.title} className={cat.face ? "cat cat--face" : "cat"} href={cat.href}>
           <div className="media-fill">
-            <Image src={cat.image} alt={cat.alt} fill sizes="(max-width: 900px) 100vw, 33vw" />
+            <Image src={cat.image} alt={cat.alt} fill sizes="(max-width: 899px) 85vw, (max-width: 1199px) 50vw, 25vw" />
           </div>
           <div className="cat__copy">
             <h3>{cat.title}</h3>

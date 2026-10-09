@@ -13,6 +13,7 @@ export default function HomePage() {
       <Header />
       <main id="top">
         <Hero />
+        <div className="hero-video-gap" aria-hidden="true" />
         <ArtSection />
         <StudioBand />
         <Categories />
